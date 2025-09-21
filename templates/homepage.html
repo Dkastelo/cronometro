@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href='{{ url_for("static", filename="styles/style.css") }}'>
+</head>
+
+<body>
+
+    <div id="main_box">
+        <h1>Bem-vindo à página inicial!</h1>
+        <p>Escolha uma das opções abaixo:</p>
+        <ul>
+            <div id="cronometro_link">
+                <button id="link_button" onclick="location.href='/cronometro'">
+                    Cronômetro
+                </button>
+            </div>
+
+            <div id="temporizador_link">
+                <button id="link_button" onclick="location.href='/temporizador'">
+                    Temporizador
+                </button>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
