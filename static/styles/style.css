@@ -1,72 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Open-Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open-Sans, sans-serif;
+}
+
+h1, p {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1rem ;
+  font-family: Open-sans, sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(20deg, #0c0f1e, #143041, #214f5f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(20deg, #0c0f1e, #143041, #214f5f);
+}
+
+.input-number {
+  border-radius: 6px;
+  padding: 4rem;
+  font-size: 150%;
+  text-align: center;
+  width: 250px;
+  height: 100px;
 }
 
 #main_box {
-    background-color: #0c0f1e;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 50%;
-    height: 60%;
-    position: center;
+  background-color: #0c0f1e;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 50%;
+  height: 80%;
+  position: center;
 }
 
 #timer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0c0f1e;
-    height: 70%;
-    width: 100%;
-    border: 3px solid #214f5f;
-    border-radius: 12px;
-    font-size: 500%;
-    font-family: Open-Sans;
-    color: #ffffff;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c0f1e;
+  height: 70%;
+  width: 100%;
+  border: 3px solid #214f5f;
+  border-radius: 12px;
+  font-size: 500%;
+  font-family: Open-Sans;
+  color: #ffffff;
+  margin-bottom: 2rem;
 }
 
 #actions {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+#inputs {
+  gap: 4rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  justify-content: center;
+  display: flex;
 }
 
 #actions button {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    background: #143141;
-    border: 1px solid #214f5f;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-family: Open-Sans;
-    font-size: 250%;
-    font-weight: 800;
-    line-height: 16px;
-    min-height: 40px;
-    padding: 12px 14px;
-    text-align: center;
-    text-rendering: geometricprecision;
-    touch-action: manipulation;
-    transition: background-color 0.3s, box-shadow 0.2s, color 0.3s;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background: #143141;
+  border: 1px solid #214f5f;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open-Sans;
+  font-size: 250%;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  touch-action: manipulation;
+  transition: background-color 0.3s, box-shadow 0.2s, color 0.3s;
 }
 
 #power:hover, #power:active {
@@ -83,4 +109,55 @@ body {
 
 #reset:active {
   opacity: .5;
+}
+
+#temporizador_link, #cronometro_link {
+  color:#0c0f1e;
+  text-decoration: none;
+  font-size: 150%;
+  background-color: #214f5f;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+}
+
+#link_button {
+  background-color: #0c0f1e;
+  color: #ffffff;
+  border: 3px solid #214f5f;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 120%;
+  font-family: Open-Sans, sans-serif;
+  align-items: center;
+  cursor: pointer;
+}
+
+#back_div {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #0c0f1e;
+  border-radius: 6px;
+  padding: 0.5rem;
+  border: 3px solid #214f5f;
+  cursor: pointer;
+  align-items: center;
+}
+#back {
+  background-color: #0c0f1e;
+  color: #ffffff;
+  border: none;
+  font-size: 120%;
+  font-family: Open-Sans, sans-serif;
+  cursor: pointer;
+  font-size: small;
 }

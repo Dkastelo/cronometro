@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+
+<body>
+
+    <div id="back_div">
+        <button id="back" onclick="location.href='/'">
+            Voltar
+        </button>
+    </div>
+
+    <div id="main_box">
+
+        <h2 id="timer">00:00:00</h2>
+
+        <div id="inputs">
+            <input type="number" id="hours_input" placeholder="Horas" min="0" max="25">
+            <input type="number" id="minutes_input" placeholder="Minutos" min="0" max="59">
+            <input type="number" id="seconds_input" placeholder="Segundos" min="0" max="59">
+        </div>
+        <div id="actions">
+            <button id="power" action="start">Iniciar</button>
+            <button id="reset">Resetar</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='javascript/temp.js') }}"></script>
+</body>
+</html>
